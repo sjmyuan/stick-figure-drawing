@@ -3,7 +3,7 @@ import { Stage, Layer, Rect, Circle, Line, Ellipse } from "react-konva";
 import { Drawing, DrawingElement } from "./types/drawing";
 // Function to fetch and parse drawing data
 const fetchDrawingData = async (): Promise<Drawing> => {
-  const response = await fetch('/drawing.json');
+  const response = await fetch("/drawing.json");
   const data = await response.json();
   return data.drawing as Drawing;
 };
@@ -27,8 +27,9 @@ const App = () => {
                 y={shape.top_left?.y}
                 width={shape.width}
                 height={shape.height}
-                stroke={"black"}
-                strokeWidth={1}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
               />
             );
           } else if (shape.type === "CIRCLE") {
@@ -38,22 +39,67 @@ const App = () => {
                 x={shape.center?.x}
                 y={shape.center?.y}
                 radius={shape.radius}
-                stroke={"black"}
-                strokeWidth={1}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
               />
             );
           } else if (shape.type === "LINE") {
             return (
               <Line
                 key={index}
-                points={[
-                  shape.start?.x ?? 0,
-                  shape.start?.y ?? 0,
-                  shape.end?.x ?? 0,
-                  shape.end?.y ?? 0,
-                ]}
-                stroke={"black"}
-                strokeWidth={1}
+                points={
+                  shape.points?.length
+                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    : []
+                }
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+              />
+            );
+          } else if (shape.type === "CURVE") {
+            return (
+              <Line
+                key={index}
+                points={
+                  shape.points?.length
+                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    : []
+                }
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+                tension={0.5}
+              />
+            );
+          } else if (shape.type === "POLYGON") {
+            return (
+              <Line
+                key={index}
+                points={
+                  shape.points?.length
+                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    : []
+                }
+                closed
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+              />
+            );
+          } else if (shape.type === "CURVE_BOUNDED_REGION") {
+            return (
+              <Line
+                key={index}
+                points={
+                  shape.points?.length
+                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    : []
+                }
+                closed
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+                tension={0.5}
               />
             );
           } else if (shape.type === "ELLIPSE") {
@@ -64,8 +110,9 @@ const App = () => {
                 y={shape.center?.y ?? 0}
                 radiusX={shape.radiusX ?? 0}
                 radiusY={shape.radiusY ?? 0}
-                stroke={"black"}
-                strokeWidth={1}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
               />
             );
           }
