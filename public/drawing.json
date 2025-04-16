@@ -1,0 +1,21 @@
+{
+    "drawing": [
+        {"type": "ELLIPSE", "center": {"x": 512, "y": 250}, "radiusX": 90, "radiusY": 80, "description": "Head (flattened ellipse for realism)"},
+        {"type": "CIRCLE", "center": {"x": 450, "y": 180}, "radius": 35, "description": "Left ear (black fur)"},
+        {"type": "CIRCLE", "center": {"x": 570, "y": 180}, "radius": 35, "description": "Right ear (black fur)"},
+        {"type": "ELLIPSE", "center": {"x": 485, "y": 240}, "radiusX": 12, "radiusY": 18, "description": "Left eye patch (tilted ellipse)"},
+        {"type": "ELLIPSE", "center": {"x": 535, "y": 240}, "radiusX": 12, "radiusY": 18, "description": "Right eye patch (tilted ellipse)"},
+        {"type": "CIRCLE", "center": {"x": 512, "y": 270}, "radius": 8, "description": "Nose"},
+        {"type": "LINE", "start": {"x": 512, "y": 278}, "end": {"x": 512, "y": 300}, "description": "Mouth line (vertical, shorter)"},
+        {"type": "ELLIPSE", "center": {"x": 512, "y": 450}, "radiusX": 100, "radiusY": 130, "description": "Body (oval, mimicking a pudgy torso)"},
+        {"type": "ELLIPSE", "center": {"x": 400, "y": 400}, "radiusX": 30, "radiusY": 20, "description": "Left paw (attached to arm)"},
+        {"type": "ELLIPSE", "center": {"x": 624, "y": 400}, "radiusX": 30, "radiusY": 20, "description": "Right paw (attached to arm)"},
+        {"type": "LINE", "start": {"x": 430, "y": 380}, "end": {"x": 370, "y": 320}, "description": "Left arm (thicker, curved)"},
+        {"type": "LINE", "start": {"x": 594, "y": 380}, "end": {"x": 654, "y": 320}, "description": "Right arm (thicker, curved)"},
+        {"type": "ELLIPSE", "center": {"x": 470, "y": 580}, "radiusX": 25, "radiusY": 40, "description": "Left foot (attached to leg)"},
+        {"type": "ELLIPSE", "center": {"x": 554, "y": 580}, "radiusX": 25, "radiusY": 40, "description": "Right foot (attached to leg)"},
+        {"type": "LINE", "start": {"x": 470, "y": 520}, "end": {"x": 470, "y": 580}, "description": "Left leg (shorter and thicker)"},
+        {"type": "LINE", "start": {"x": 554, "y": 520}, "end": {"x": 554, "y": 580}, "description": "Right leg (shorter and thicker)"},
+        {"type": "ELLIPSE", "center": {"x": 512, "y": 420}, "radiusX": 40, "radiusY": 30, "description": "Belly (white fur patch)"}
+    ]
+}
