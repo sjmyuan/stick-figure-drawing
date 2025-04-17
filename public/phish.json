@@ -1,0 +1,101 @@
+{
+  "drawing": [
+    {
+      "type": "ELLIPSE",
+      "center": {"x": 512, "y": 512},
+      "radiusX": 150,
+      "radiusY": 80,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFA500",
+      "description": "鱼的身体"
+    },
+    {
+      "type": "POLYGON",
+      "points": [
+        {"x": 662, "y": 512},
+        {"x": 782, "y": 462},
+        {"x": 782, "y": 562}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FF8C00",
+      "description": "鱼的尾巴"
+    },
+    {
+      "type": "POLYGON",
+      "points": [
+        {"x": 512, "y": 432},
+        {"x": 552, "y": 412},
+        {"x": 512, "y": 452}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FF8C00",
+      "description": "背鳍"
+    },
+    {
+      "type": "POLYGON",
+      "points": [
+        {"x": 512, "y": 592},
+        {"x": 552, "y": 612},
+        {"x": 512, "y": 572}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FF8C00",
+      "description": "腹鳍"
+    },
+    {
+      "type": "CIRCLE",
+      "center": {"x": 462, "y": 492},
+      "radius": 10,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "鱼眼白"
+    },
+    {
+      "type": "CIRCLE",
+      "center": {"x": 462, "y": 492},
+      "radius": 5,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#000000",
+      "description": "鱼眼黑"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        {"x": 422, "y": 502},
+        {"x": 442, "y": 512},
+        {"x": 422, "y": 522}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "鱼的嘴巴（调整位置和弧度）"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        {"x": 482, "y": 492},
+        {"x": 492, "y": 497},
+        {"x": 482, "y": 502}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "description": "鱼鳃（调整位置和大小）"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        {"x": 487, "y": 487},
+        {"x": 497, "y": 492},
+        {"x": 487, "y": 497}
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "description": "第二道鱼鳃"
+    }
+  ]
+}

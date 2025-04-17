@@ -1,0 +1,242 @@
+{
+  "drawing": [
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 150, "y": 300 },
+      "width": 400,
+      "height": 120,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#8B4513",
+      "description": "Train body (main cabin)"
+    },
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 550, "y": 350 },
+      "width": 180,
+      "height": 70,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#A0522D",
+      "description": "Train coal car"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 250, "y": 420 },
+      "radius": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Front wheel"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 350, "y": 420 },
+      "radius": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Middle wheel"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 450, "y": 420 },
+      "radius": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Rear wheel (main cabin)"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 600, "y": 420 },
+      "radius": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Rear wheel (coal car)"
+    },
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 100, "y": 280 },
+      "width": 50,
+      "height": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#696969",
+      "description": "Smokestack"
+    },
+    {
+      "type": "POLYGON",
+      "points": [
+        { "x": 150, "y": 300 },
+        { "x": 200, "y": 250 },
+        { "x": 250, "y": 300 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#A0522D",
+      "description": "Front cabin roof"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 250, "y": 420 },
+        { "x": 250, "y": 390 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Wheel connector (front)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 350, "y": 420 },
+        { "x": 350, "y": 390 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Wheel connector (middle)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 450, "y": 420 },
+        { "x": 450, "y": 390 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Wheel connector (rear)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 600, "y": 420 },
+        { "x": 600, "y": 390 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Wheel connector (coal car)"
+    },
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 180, "y": 330 },
+      "width": 30,
+      "height": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#ADD8E6",
+      "description": "Window (left)"
+    },
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 230, "y": 330 },
+      "width": 30,
+      "height": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#ADD8E6",
+      "description": "Window (middle)"
+    },
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 280, "y": 330 },
+      "width": 30,
+      "height": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#ADD8E6",
+      "description": "Window (right)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 150, "y": 360 },
+        { "x": 550, "y": 360 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Body decoration line"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 50, "y": 450 },
+        { "x": 700, "y": 450 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 3,
+      "description": "Rail track (top)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 50, "y": 470 },
+        { "x": 700, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 3,
+      "description": "Rail track (bottom)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 100, "y": 450 },
+        { "x": 100, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 200, "y": 450 },
+        { "x": 200, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 300, "y": 450 },
+        { "x": 300, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 400, "y": 450 },
+        { "x": 400, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 500, "y": 450 },
+        { "x": 500, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 600, "y": 450 },
+        { "x": 600, "y": 470 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Rail tie"
+    }
+  ]
+}

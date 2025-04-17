@@ -1,158 +1,267 @@
 {
-    "drawing": [
-      {
-        "type": "CIRCLE",
-        "center": { "x": 512, "y": 512 },
-        "radius": 200,
-        "strokeColor": "#FFFFFF",
-        "strokeWidth": 0,
-        "fillColor": "#FFFFFF",
-        "description": "Main body of the panda"
-      },
-      {
-        "type": "CIRCLE",
-        "center": { "x": 512, "y": 300 },
-        "radius": 150,
-        "strokeColor": "#FFFFFF",
-        "strokeWidth": 0,
-        "fillColor": "#FFFFFF",
-        "description": "Head of the panda"
-      },
-      {
-        "type": "CIRCLE",
-        "center": { "x": 400, "y": 200 },
-        "radius": 50,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Left ear"
-      },
-      {
-        "type": "CIRCLE",
-        "center": { "x": 624, "y": 200 },
-        "radius": 50,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Right ear"
-      },
-      {
-        "type": "ELLIPSE",
-        "center": { "x": 400, "y": 400 },
-        "radiusX": 100,
-        "radiusY": 150,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Left shoulder patch"
-      },
-      {
-        "type": "ELLIPSE",
-        "center": { "x": 624, "y": 400 },
-        "radiusX": 100,
-        "radiusY": 150,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Right shoulder patch"
-      },
-      {
-        "type": "CIRCLE",
-        "center": { "x": 450, "y": 250 },
-        "radius": 30,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Left eye"
-      },
-      {
-        "type": "CIRCLE",
-        "center": { "x": 600, "y": 250 },
-        "radius": 30,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Right eye"
-      },
-      {
-        "type": "ELLIPSE",
-        "center": { "x": 512, "y": 320 },
-        "radiusX": 40,
-        "radiusY": 30,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Nose"
-      },
-      {
-        "type": "CURVE",
-        "points": [
-          { "x": 512, "y": 350 },
-          { "x": 512, "y": 400 }
-        ],
-        "strokeColor": "#000000",
-        "strokeWidth": 5,
-        "description": "Mouth line"
-      },
-      {
-        "type": "RECTANGLE",
-        "top_left": { "x": 450, "y": 700 },
-        "width": 50,
-        "height": 100,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Left front leg"
-      },
-      {
-        "type": "RECTANGLE",
-        "top_left": { "x": 560, "y": 700 },
-        "width": 50,
-        "height": 100,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Right front leg"
-      },
-      {
-        "type": "RECTANGLE",
-        "top_left": { "x": 400, "y": 750 },
-        "width": 50,
-        "height": 100,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Left back leg"
-      },
-      {
-        "type": "RECTANGLE",
-        "top_left": { "x": 624, "y": 750 },
-        "width": 50,
-        "height": 100,
-        "strokeColor": "#000000",
-        "strokeWidth": 0,
-        "fillColor": "#000000",
-        "description": "Right back leg"
-      },
-      {
-        "type": "CURVE",
-        "points": [
-          { "x": 400, "y": 300 },
-          { "x": 450, "y": 400 }
-        ],
-        "strokeColor": "#000000",
-        "strokeWidth": 10,
-        "description": "Left arm curve"
-      },
-      {
-        "type": "CURVE",
-        "points": [
-          { "x": 624, "y": 300 },
-          { "x": 580, "y": 400 }
-        ],
-        "strokeColor": "#000000",
-        "strokeWidth": 10,
-        "description": "Right arm curve"
-      }
-    ]
-  }
+  "drawing": [
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 300, "y": 200 },
+      "radiusX": 40,
+      "radiusY": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFD700",
+      "description": "First bee's body"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 270, "y": 200 },
+      "radius": 15,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFD700",
+      "description": "First bee's head"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 260, "y": 195 },
+      "radius": 3,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#000000",
+      "description": "First bee's left eye"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 260, "y": 205 },
+      "radius": 3,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#000000",
+      "description": "First bee's right eye"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 280, "y": 170 },
+        { "x": 280, "y": 230 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "First bee's body stripe (center)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 260, "y": 180 },
+        { "x": 260, "y": 220 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "First bee's body stripe (left)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 300, "y": 180 },
+        { "x": 300, "y": 220 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "First bee's body stripe (right)"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 290, "y": 180 },
+        { "x": 320, "y": 160 },
+        { "x": 340, "y": 180 }
+      ],
+      "strokeColor": "#ADD8E6",
+      "strokeWidth": 2,
+      "fillColor": "#ADD8E680",
+      "description": "First bee's left wing (top)"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 290, "y": 220 },
+        { "x": 320, "y": 240 },
+        { "x": 340, "y": 220 }
+      ],
+      "strokeColor": "#ADD8E6",
+      "strokeWidth": 2,
+      "fillColor": "#ADD8E680",
+      "description": "First bee's right wing (bottom)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 260, "y": 200 },
+        { "x": 240, "y": 180 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "First bee's antenna (left)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 260, "y": 200 },
+        { "x": 240, "y": 220 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "First bee's antenna (right)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 600, "y": 300 },
+      "radiusX": 40,
+      "radiusY": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFD700",
+      "description": "Second bee's body"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 570, "y": 300 },
+      "radius": 15,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFD700",
+      "description": "Second bee's head"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 560, "y": 295 },
+      "radius": 3,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#000000",
+      "description": "Second bee's left eye"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 560, "y": 305 },
+      "radius": 3,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#000000",
+      "description": "Second bee's right eye"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 580, "y": 270 },
+        { "x": 580, "y": 330 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Second bee's body stripe (center)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 560, "y": 280 },
+        { "x": 560, "y": 320 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Second bee's body stripe (left)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 600, "y": 280 },
+        { "x": 600, "y": 320 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Second bee's body stripe (right)"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 590, "y": 280 },
+        { "x": 620, "y": 260 },
+        { "x": 640, "y": 280 }
+      ],
+      "strokeColor": "#ADD8E6",
+      "strokeWidth": 2,
+      "fillColor": "#ADD8E680",
+      "description": "Second bee's left wing (top)"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 590, "y": 320 },
+        { "x": 620, "y": 340 },
+        { "x": 640, "y": 320 }
+      ],
+      "strokeColor": "#ADD8E6",
+      "strokeWidth": 2,
+      "fillColor": "#ADD8E680",
+      "description": "Second bee's right wing (bottom)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 560, "y": 300 },
+        { "x": 540, "y": 280 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Second bee's antenna (left)"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 560, "y": 300 },
+        { "x": 540, "y": 320 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Second bee's antenna (right)"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 400, "y": 250 },
+        { "x": 450, "y": 200 },
+        { "x": 500, "y": 250 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "description": "Flight path (curve between bees)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 450, "y": 400 },
+      "radiusX": 20,
+      "radiusY": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "Cloud (background)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 470, "y": 390 },
+      "radiusX": 25,
+      "radiusY": 25,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "Cloud (background)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 490, "y": 400 },
+      "radiusX": 20,
+      "radiusY": 20,
+      "strokeColor": "#000000",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "Cloud (background)"
+    }
+  ]
+}

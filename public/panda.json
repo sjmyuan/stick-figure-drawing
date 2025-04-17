@@ -1,0 +1,156 @@
+{
+  "drawing": [
+    {
+      "type": "CIRCLE",
+      "center": { "x": 512, "y": 300 },
+      "radius": 150,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFFFFF",
+      "description": "Panda's face"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 420, "y": 180 },
+      "radius": 60,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Left ear"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 600, "y": 180 },
+      "radius": 60,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Right ear"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 470, "y": 280 },
+      "radiusX": 30,
+      "radiusY": 40,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Left eye patch"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 550, "y": 280 },
+      "radiusX": 30,
+      "radiusY": 40,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Right eye patch"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 480, "y": 290 },
+      "radius": 8,
+      "strokeColor": "#FFFFFF",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "Left eye highlight"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 560, "y": 290 },
+      "radius": 8,
+      "strokeColor": "#FFFFFF",
+      "strokeWidth": 1,
+      "fillColor": "#FFFFFF",
+      "description": "Right eye highlight"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 512, "y": 350 },
+      "radiusX": 20,
+      "radiusY": 15,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Nose"
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 492, "y": 370 },
+        { "x": 512, "y": 390 },
+        { "x": 532, "y": 370 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Smile"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 512, "y": 350 },
+        { "x": 512, "y": 370 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Mouth division"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 512, "y": 550 },
+      "radiusX": 120,
+      "radiusY": 150,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFFFFF",
+      "description": "Body"
+    },
+    {
+      "type": "CURVE_BOUNDED_REGION",
+      "points": [
+        { "x": 390, "y": 450 },
+        { "x": 350, "y": 500 },
+        { "x": 390, "y": 550 },
+        { "x": 430, "y": 500 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Left arm (smooth curve)"
+    },
+    {
+      "type": "CURVE_BOUNDED_REGION",
+      "points": [
+        { "x": 634, "y": 450 },
+        { "x": 674, "y": 500 },
+        { "x": 634, "y": 550 },
+        { "x": 594, "y": 500 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Right arm (smooth curve)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 450, "y": 680 },
+      "radiusX": 50,
+      "radiusY": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Left leg (flattened ellipse)"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 570, "y": 680 },
+      "radiusX": 50,
+      "radiusY": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#000000",
+      "description": "Right leg (flattened ellipse)"
+    }
+  ]
+}

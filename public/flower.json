@@ -1,0 +1,99 @@
+{
+  "drawing": [
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 512, "y": 300 },
+      "radiusX": 80,
+      "radiusY": 40,
+      "strokeColor": "#FF69B4",
+      "strokeWidth": 2,
+      "fillColor": "#FFB6C1",
+      "description": "Top petal"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 430, "y": 350 },
+      "radiusX": 80,
+      "radiusY": 40,
+      "strokeColor": "#FF69B4",
+      "strokeWidth": 2,
+      "fillColor": "#FFB6C1",
+      "description": "Left petal"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 594, "y": 350 },
+      "radiusX": 80,
+      "radiusY": 40,
+      "strokeColor": "#FF69B4",
+      "strokeWidth": 2,
+      "fillColor": "#FFB6C1",
+      "description": "Right petal"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 470, "y": 400 },
+      "radiusX": 80,
+      "radiusY": 40,
+      "strokeColor": "#FF69B4",
+      "strokeWidth": 2,
+      "fillColor": "#FFB6C1",
+      "description": "Bottom-left petal"
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 554, "y": 400 },
+      "radiusX": 80,
+      "radiusY": 40,
+      "strokeColor": "#FF69B4",
+      "strokeWidth": 2,
+      "fillColor": "#FFB6C1",
+      "description": "Bottom-right petal"
+    },
+    {
+      "type": "CIRCLE",
+      "center": { "x": 512, "y": 350 },
+      "radius": 30,
+      "strokeColor": "#FFD700",
+      "strokeWidth": 2,
+      "fillColor": "#FFFF00",
+      "description": "Center of the flower"
+    },
+    {
+      "type": "LINE",
+      "points": [
+        { "x": 512, "y": 400 },
+        { "x": 512, "y": 700 }
+      ],
+      "strokeColor": "#228B22",
+      "strokeWidth": 4,
+      "description": "Stem of the flower"
+    },
+    {
+      "type": "CURVE_BOUNDED_REGION",
+      "points": [
+        { "x": 480, "y": 550 },
+        { "x": 400, "y": 500 },
+        { "x": 480, "y": 450 },
+        { "x": 520, "y": 500 }
+      ],
+      "strokeColor": "#228B22",
+      "strokeWidth": 2,
+      "fillColor": "#32CD32",
+      "description": "Left leaf"
+    },
+    {
+      "type": "CURVE_BOUNDED_REGION",
+      "points": [
+        { "x": 544, "y": 550 },
+        { "x": 624, "y": 500 },
+        { "x": 544, "y": 450 },
+        { "x": 504, "y": 500 }
+      ],
+      "strokeColor": "#228B22",
+      "strokeWidth": 2,
+      "fillColor": "#32CD32",
+      "description": "Right leaf"
+    }
+  ]
+}
