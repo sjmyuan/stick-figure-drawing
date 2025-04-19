@@ -1,267 +1,113 @@
 {
+  "description": "This drawing represents a ship sailing in the sea. It includes an elliptical hull, rectangular deck, cylindrical smokestack, circular portholes, vertical mast with a wedge-shaped flag, and curved waves. All components are positioned proportionally using calculated coordinates.",
   "drawing": [
     {
       "type": "ELLIPSE",
-      "center": { "x": 300, "y": 200 },
-      "radiusX": 40,
-      "radiusY": 30,
-      "strokeColor": "#000000",
+      "center": {"x": 720, "y": 450},
+      "radiusX": 300,
+      "radiusY": 80,
+      "strokeColor": "#2F4F4F",
       "strokeWidth": 2,
-      "fillColor": "#FFD700",
-      "description": "First bee's body"
+      "fillColor": "#2F4F4F",
+      "description": "Ship hull. Centered horizontally (720) with vertical position 450. RadiusX 300 creates horizontal elongation, RadiusY 80 maintains shallow draft proportion."
     },
     {
-      "type": "CIRCLE",
-      "center": { "x": 270, "y": 200 },
-      "radius": 15,
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "fillColor": "#FFD700",
-      "description": "First bee's head"
-    },
-    {
-      "type": "CIRCLE",
-      "center": { "x": 260, "y": 195 },
-      "radius": 3,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#000000",
-      "description": "First bee's left eye"
-    },
-    {
-      "type": "CIRCLE",
-      "center": { "x": 260, "y": 205 },
-      "radius": 3,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#000000",
-      "description": "First bee's right eye"
-    },
-    {
-      "type": "LINE",
+      "type": "CURVE_BOUNDED_REGION",
       "points": [
-        { "x": 280, "y": 170 },
-        { "x": 280, "y": 230 }
+        {"x": 420, "y": 450},
+        {"x": 360, "y": 430},
+        {"x": 300, "y": 400},
+        {"x": 420, "y": 400}
       ],
-      "strokeColor": "#000000",
+      "strokeColor": "#2F4F4F",
       "strokeWidth": 2,
-      "description": "First bee's body stripe (center)"
+      "fillColor": "#2F4F4F",
+      "description": "Bow section. Starting from hull's left edge (420,450), curving upward to create pointed bow shape. Control points create smooth naval curve."
     },
     {
-      "type": "LINE",
-      "points": [
-        { "x": 260, "y": 180 },
-        { "x": 260, "y": 220 }
-      ],
-      "strokeColor": "#000000",
+      "type": "RECTANGLE",
+      "top_left": {"x": 520, "y": 350},
+      "width": 400,
+      "height": 100,
+      "strokeColor": "#A0522D",
       "strokeWidth": 2,
-      "description": "First bee's body stripe (left)"
+      "fillColor": "#A0522D",
+      "description": "Main deck. Positioned 100px above hull center (450-100=350). Width 400 (2/3 of hull length) centered with left at 720-200=520."
     },
     {
-      "type": "LINE",
-      "points": [
-        { "x": 300, "y": 180 },
-        { "x": 300, "y": 220 }
-      ],
-      "strokeColor": "#000000",
+      "type": "RECTANGLE",
+      "top_left": {"x": 800, "y": 250},
+      "width": 60,
+      "height": 100,
+      "strokeColor": "#FF0000",
       "strokeWidth": 2,
-      "description": "First bee's body stripe (right)"
-    },
-    {
-      "type": "CURVE",
-      "points": [
-        { "x": 290, "y": 180 },
-        { "x": 320, "y": 160 },
-        { "x": 340, "y": 180 }
-      ],
-      "strokeColor": "#ADD8E6",
-      "strokeWidth": 2,
-      "fillColor": "#ADD8E680",
-      "description": "First bee's left wing (top)"
-    },
-    {
-      "type": "CURVE",
-      "points": [
-        { "x": 290, "y": 220 },
-        { "x": 320, "y": 240 },
-        { "x": 340, "y": 220 }
-      ],
-      "strokeColor": "#ADD8E6",
-      "strokeWidth": 2,
-      "fillColor": "#ADD8E680",
-      "description": "First bee's right wing (bottom)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 260, "y": 200 },
-        { "x": 240, "y": 180 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "First bee's antenna (left)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 260, "y": 200 },
-        { "x": 240, "y": 220 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "First bee's antenna (right)"
+      "fillColor": "#FF0000",
+      "description": "Smokestack. Positioned on deck's right side (800=520+400-60-60). Height 100 extends above deck to y250."
     },
     {
       "type": "ELLIPSE",
-      "center": { "x": 600, "y": 300 },
-      "radiusX": 40,
-      "radiusY": 30,
-      "strokeColor": "#000000",
+      "center": {"x": 830, "y": 250},
+      "radiusX": 30,
+      "radiusY": 15,
+      "strokeColor": "#8B0000",
+      "strokeWidth": 2,
+      "fillColor": "#8B0000",
+      "description": "Smokestack top. Centered on smokestack (800+30=830). Elliptical shape creates 3D perspective effect."
+    },
+    {
+      "type": "CIRCLE",
+      "center": {"x": 600, "y": 380},
+      "radius": 12,
+      "strokeColor": "#4682B4",
+      "strokeWidth": 1,
+      "fillColor": "#87CEEB",
+      "description": "Porthole. First in series of 4, spaced 60px apart (600,660,720,780). Vertical position 380 centers on deck."
+    },
+    {
+      "type": "LINE",
+      "points": [
+        {"x": 720, "y": 300},
+        {"x": 720, "y": 200}
+      ],
+      "strokeColor": "#8B4513",
+      "strokeWidth": 4,
+      "description": "Main mast. Extends from deck center (720,350-50=300) to 200px height. 4px width for structural emphasis."
+    },
+    {
+      "type": "WEDGE",
+      "center": {"x": 720, "y": 200},
+      "radius": 40,
+      "angle": 30,
+      "rotation": 60,
+      "strokeColor": "#FFD700",
       "strokeWidth": 2,
       "fillColor": "#FFD700",
-      "description": "Second bee's body"
-    },
-    {
-      "type": "CIRCLE",
-      "center": { "x": 570, "y": 300 },
-      "radius": 15,
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "fillColor": "#FFD700",
-      "description": "Second bee's head"
-    },
-    {
-      "type": "CIRCLE",
-      "center": { "x": 560, "y": 295 },
-      "radius": 3,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#000000",
-      "description": "Second bee's left eye"
-    },
-    {
-      "type": "CIRCLE",
-      "center": { "x": 560, "y": 305 },
-      "radius": 3,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#000000",
-      "description": "Second bee's right eye"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 580, "y": 270 },
-        { "x": 580, "y": 330 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "Second bee's body stripe (center)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 560, "y": 280 },
-        { "x": 560, "y": 320 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "Second bee's body stripe (left)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 600, "y": 280 },
-        { "x": 600, "y": 320 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "Second bee's body stripe (right)"
+      "description": "Ship flag. Positioned at mast top (720,200). 30° wedge rotated 60° creates dynamic pennant shape."
     },
     {
       "type": "CURVE",
       "points": [
-        { "x": 590, "y": 280 },
-        { "x": 620, "y": 260 },
-        { "x": 640, "y": 280 }
+        {"x": 200, "y": 500},
+        {"x": 400, "y": 520},
+        {"x": 600, "y": 510},
+        {"x": 800, "y": 530},
+        {"x": 1000, "y": 515},
+        {"x": 1240, "y": 525}
       ],
-      "strokeColor": "#ADD8E6",
+      "strokeColor": "#0000FF",
+      "strokeWidth": 3,
+      "description": "Sea waves. Sinusoidal pattern with alternating control points. Amplitude ±15px creates realistic wave motion effect under hull."
+    },
+    {
+      "type": "ARC",
+      "center": {"x": 720, "y": 530},
+      "innerRadius": 0,
+      "outerRadius": 20,
+      "angle": 180,
+      "strokeColor": "#00BFFF",
       "strokeWidth": 2,
-      "fillColor": "#ADD8E680",
-      "description": "Second bee's left wing (top)"
-    },
-    {
-      "type": "CURVE",
-      "points": [
-        { "x": 590, "y": 320 },
-        { "x": 620, "y": 340 },
-        { "x": 640, "y": 320 }
-      ],
-      "strokeColor": "#ADD8E6",
-      "strokeWidth": 2,
-      "fillColor": "#ADD8E680",
-      "description": "Second bee's right wing (bottom)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 560, "y": 300 },
-        { "x": 540, "y": 280 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "Second bee's antenna (left)"
-    },
-    {
-      "type": "LINE",
-      "points": [
-        { "x": 560, "y": 300 },
-        { "x": 540, "y": 320 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 2,
-      "description": "Second bee's antenna (right)"
-    },
-    {
-      "type": "CURVE",
-      "points": [
-        { "x": 400, "y": 250 },
-        { "x": 450, "y": 200 },
-        { "x": 500, "y": 250 }
-      ],
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "description": "Flight path (curve between bees)"
-    },
-    {
-      "type": "ELLIPSE",
-      "center": { "x": 450, "y": 400 },
-      "radiusX": 20,
-      "radiusY": 20,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#FFFFFF",
-      "description": "Cloud (background)"
-    },
-    {
-      "type": "ELLIPSE",
-      "center": { "x": 470, "y": 390 },
-      "radiusX": 25,
-      "radiusY": 25,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#FFFFFF",
-      "description": "Cloud (background)"
-    },
-    {
-      "type": "ELLIPSE",
-      "center": { "x": 490, "y": 400 },
-      "radiusX": 20,
-      "radiusY": 20,
-      "strokeColor": "#000000",
-      "strokeWidth": 1,
-      "fillColor": "#FFFFFF",
-      "description": "Cloud (background)"
+      "fillColor": "#00BFFF",
+      "description": "Bow wave. Centered below hull front (720,450+80=530). 180° arc creates foaming water effect at ship's cutting edge."
     }
   ]
 }

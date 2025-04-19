@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Stage, Layer, Rect, Circle, Line, Ellipse } from "react-konva";
+import {
+  Stage,
+  Layer,
+  Rect,
+  Circle,
+  Line,
+  Ellipse,
+  Wedge,
+  Ring,
+  Arc,
+} from "react-konva";
 import { Drawing, DrawingElement } from "./types/drawing";
 // Function to fetch and parse drawing data
 const fetchDrawingData = async (): Promise<Drawing> => {
@@ -44,6 +54,47 @@ const App = () => {
                 strokeWidth={shape.strokeWidth}
               />
             );
+          } else if (shape.type === "RING") {
+            return (
+              <Ring
+                key={index}
+                x={shape.center?.x}
+                y={shape.center?.y}
+                innerRadius={shape.innerRadius}
+                outerRadius={shape.outerRadius}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+              />
+            );
+          } else if (shape.type === "ARC") {
+            return (
+              <Arc
+                key={index}
+                x={shape.center?.x}
+                y={shape.center?.y}
+                innerRadius={shape.innerRadius}
+                outerRadius={shape.outerRadius}
+                angle={shape.angle}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+              />
+            );
+          } else if (shape.type === "WEDGE") {
+            return (
+              <Wedge
+                key={index}
+                x={shape.center?.x}
+                y={shape.center?.y}
+                radius={shape.radius}
+                angle={shape.angle}
+                rotation={shape.rotation}
+                fill={shape.fillColor}
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+              />
+            );
           } else if (shape.type === "LINE") {
             return (
               <Line
@@ -69,6 +120,22 @@ const App = () => {
                 stroke={shape.strokeColor}
                 strokeWidth={shape.strokeWidth}
                 tension={0.5}
+              />
+            );
+          } else if (shape.type === "ARROW") {
+            return (
+              <Line
+                key={index}
+                points={
+                  shape.points?.length
+                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    : []
+                }
+                stroke={shape.strokeColor}
+                strokeWidth={shape.strokeWidth}
+                tension={0.5}
+                pointerLength={shape.pointerLength}
+                pointerWidth={shape.pointerWidth}
               />
             );
           } else if (shape.type === "POLYGON") {

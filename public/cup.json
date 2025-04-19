@@ -1,0 +1,105 @@
+{
+  "description": "This revised teacup drawing features a hollow handle created with curves instead of filled regions. The cup body remains visible through the handle's empty space. Components are ordered to maintain proper layering.",
+  "drawing": [
+    {
+      "type": "RECTANGLE",
+      "top_left": { "x": 600, "y": 300 },
+      "width": 240,
+      "height": 200,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFFFFF",
+      "description": "Cup body. Centered horizontally (600 = (1440-240)/2). Vertical position starts at y=300. Width 240 creates proportional body, height 200 allows space for base and top."
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 720, "y": 300 },
+      "radiusX": 120,
+      "radiusY": 40,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFFFFF",
+      "description": "Cup rim. Centered above body (y=300 matches body top). RadiusX=120 matches body width/2, RadiusY=40 creates elliptical opening."
+    },
+    {
+      "type": "ELLIPSE",
+      "center": { "x": 720, "y": 500 },
+      "radiusX": 140,
+      "radiusY": 30,
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "fillColor": "#FFFFFF",
+      "description": "Cup base. Positioned below body (y=500 = 300+200). RadiusX=140 creates wider base than body for stability."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 780, "y": 350 },
+        { "x": 860, "y": 320 },
+        { "x": 900, "y": 350 },
+        { "x": 860, "y": 450 },
+        { "x": 780, "y": 450 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Handle outer curve. Starts at cup's right side (780,350), arcs outward to (900,350), then curves back down. Calculated to maintain 20px clearance from cup body."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 800, "y": 360 },
+        { "x": 850, "y": 340 },
+        { "x": 880, "y": 360 },
+        { "x": 850, "y": 440 },
+        { "x": 800, "y": 440 }
+      ],
+      "strokeColor": "#000000",
+      "strokeWidth": 2,
+      "description": "Handle inner curve. Parallel to outer curve but 20px closer to cup body. Creates hollow space between handle and cup (800,360) starts 20px inward from outer handle start."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 640, "y": 380 },
+        { "x": 720, "y": 400 },
+        { "x": 800, "y": 380 }
+      ],
+      "strokeColor": "#FF0000",
+      "strokeWidth": 2,
+      "description": "Decorative line 1. Positioned 80px below rim (380 = 300+80). Curved upward at center (y=400) for dynamic pattern."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 660, "y": 430 },
+        { "x": 720, "y": 450 },
+        { "x": 780, "y": 430 }
+      ],
+      "strokeColor": "#0000FF",
+      "strokeWidth": 2,
+      "description": "Decorative line 2. Positioned 30px below first line (430 = 380+50). Mirroring curve creates rhythmic pattern."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 720, "y": 250 },
+        { "x": 700, "y": 150 },
+        { "x": 740, "y": 100 }
+      ],
+      "strokeColor": "#808080",
+      "strokeWidth": 1,
+      "description": "Steam line 1. Rises from cup center (720,250). First control point left, then right to create natural wave."
+    },
+    {
+      "type": "CURVE",
+      "points": [
+        { "x": 720, "y": 240 },
+        { "x": 760, "y": 160 },
+        { "x": 700, "y": 80 }
+      ],
+      "strokeColor": "#808080",
+      "strokeWidth": 1,
+      "description": "Steam line 2. Mirrors first steam line with opposite curvature. Starts slightly lower (240) for staggered effect."
+    }
+  ]
+}

@@ -27,6 +27,44 @@ export interface Circle {
   description: string;
 }
 
+// Define the WEDGE interface
+export interface Wedge {
+  type: "WEDGE";
+  center: Point;
+  radius: number;
+  angle: number;
+  rotation: number;
+  fillColor: string;
+  strokeColor: string;
+  strokeWidth: number;
+  description: string;
+}
+
+// Define the RING interface
+export interface Ring {
+  type: "RING";
+  center: Point;
+  innerRadius: number;
+  outerRadius: number;
+  fillColor: string;
+  strokeColor: string;
+  strokeWidth: number;
+  description: string;
+}
+
+// Define the ARC interface
+export interface Arc {
+  type: "ARC";
+  center: Point;
+  innerRadius: number;
+  outerRadius: number;
+  angle: number;
+  fillColor: string;
+  strokeColor: string;
+  strokeWidth: number;
+  description: string;
+}
+
 // Define the LINE interface
 export interface Line {
   type: "LINE";
@@ -40,6 +78,17 @@ export interface Line {
 export interface Curve {
   type: "CURVE";
   points: Point[];
+  strokeColor: string;
+  strokeWidth: number;
+  description: string;
+}
+
+// Define the Arror interface
+export interface Arrow {
+  type: "ARROW";
+  points: Point[];
+  pointerLength: number;
+  pointerWidth: number;
   strokeColor: string;
   strokeWidth: number;
   description: string;
@@ -84,6 +133,10 @@ export type DrawingElement =
   | Rectangle
   | Polygon
   | Curve
+  | Wedge
+  | Ring
+  | Arc
+  | Arrow
   | CurveBoundedRegion;
 
 // Define the Drawing type as an array of DrawingElement
