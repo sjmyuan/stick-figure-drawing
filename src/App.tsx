@@ -10,13 +10,26 @@ import {
   Ring,
   Arc,
 } from "react-konva";
-import { Drawing, DrawingElement } from "./types/drawing";
+import { Drawing, DrawingElement, Point } from "./types/drawing";
 // Function to fetch and parse drawing data
 const fetchDrawingData = async (): Promise<Drawing> => {
   const response = await fetch("/drawing.json");
   const data = await response.json();
   return data.drawing as Drawing;
 };
+
+function transformPoints(
+  points: Point[],
+  width: number,
+  height: number
+): Point[] {
+  const centerX = width / 2;
+  const centerY = height / 2;
+  return points.map((point) => ({
+    x: centerX + point.x,
+    y: centerY - point.y,
+  }));
+}
 
 const App = () => {
   const [drawing, setDrawing] = useState<Drawing>([]);
@@ -30,11 +43,16 @@ const App = () => {
       <Layer>
         {drawing.map((shape: DrawingElement, index: number) => {
           if (shape.type === "RECTANGLE") {
+            const top_left = transformPoints(
+              [shape.top_left],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Rect
                 key={index}
-                x={shape.top_left?.x}
-                y={shape.top_left?.y}
+                x={top_left.x}
+                y={top_left.y}
                 width={shape.width}
                 height={shape.height}
                 fill={shape.fillColor}
@@ -43,11 +61,16 @@ const App = () => {
               />
             );
           } else if (shape.type === "CIRCLE") {
+            const center = transformPoints(
+              [shape.center],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Circle
                 key={index}
-                x={shape.center?.x}
-                y={shape.center?.y}
+                x={center.x}
+                y={center.y}
                 radius={shape.radius}
                 fill={shape.fillColor}
                 stroke={shape.strokeColor}
@@ -55,11 +78,16 @@ const App = () => {
               />
             );
           } else if (shape.type === "RING") {
+            const center = transformPoints(
+              [shape.center],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Ring
                 key={index}
-                x={shape.center?.x}
-                y={shape.center?.y}
+                x={center.x}
+                y={center.y}
                 innerRadius={shape.innerRadius}
                 outerRadius={shape.outerRadius}
                 fill={shape.fillColor}
@@ -68,28 +96,39 @@ const App = () => {
               />
             );
           } else if (shape.type === "ARC") {
+            const center = transformPoints(
+              [shape.center],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Arc
                 key={index}
-                x={shape.center?.x}
-                y={shape.center?.y}
+                x={center.x}
+                y={center.y}
                 innerRadius={shape.innerRadius}
                 outerRadius={shape.outerRadius}
-                angle={shape.angle}
+                angle={shape.endAngle - shape.startAngle}
+                rotation={shape.startAngle}
                 fill={shape.fillColor}
                 stroke={shape.strokeColor}
                 strokeWidth={shape.strokeWidth}
               />
             );
           } else if (shape.type === "WEDGE") {
+            const center = transformPoints(
+              [shape.center],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Wedge
                 key={index}
-                x={shape.center?.x}
-                y={shape.center?.y}
+                x={center.x}
+                y={center.y}
                 radius={shape.radius}
-                angle={shape.angle}
-                rotation={shape.rotation}
+                angle={shape.endAngle - shape.startAngle}
+                rotation={shape.startAngle}
                 fill={shape.fillColor}
                 stroke={shape.strokeColor}
                 strokeWidth={shape.strokeWidth}
@@ -101,7 +140,11 @@ const App = () => {
                 key={index}
                 points={
                   shape.points?.length
-                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    ? transformPoints(
+                        shape.points,
+                        window.innerWidth,
+                        window.innerHeight
+                      ).flatMap((point) => [point.x, point.y])
                     : []
                 }
                 stroke={shape.strokeColor}
@@ -114,7 +157,11 @@ const App = () => {
                 key={index}
                 points={
                   shape.points?.length
-                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    ? transformPoints(
+                        shape.points,
+                        window.innerWidth,
+                        window.innerHeight
+                      ).flatMap((point) => [point.x, point.y])
                     : []
                 }
                 stroke={shape.strokeColor}
@@ -128,7 +175,11 @@ const App = () => {
                 key={index}
                 points={
                   shape.points?.length
-                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    ? transformPoints(
+                        shape.points,
+                        window.innerWidth,
+                        window.innerHeight
+                      ).flatMap((point) => [point.x, point.y])
                     : []
                 }
                 stroke={shape.strokeColor}
@@ -144,7 +195,11 @@ const App = () => {
                 key={index}
                 points={
                   shape.points?.length
-                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    ? transformPoints(
+                        shape.points,
+                        window.innerWidth,
+                        window.innerHeight
+                      ).flatMap((point) => [point.x, point.y])
                     : []
                 }
                 closed
@@ -159,7 +214,11 @@ const App = () => {
                 key={index}
                 points={
                   shape.points?.length
-                    ? shape.points.flatMap((point) => [point.x, point.y])
+                    ? transformPoints(
+                        shape.points,
+                        window.innerWidth,
+                        window.innerHeight
+                      ).flatMap((point) => [point.x, point.y])
                     : []
                 }
                 closed
@@ -170,11 +229,16 @@ const App = () => {
               />
             );
           } else if (shape.type === "ELLIPSE") {
+            const center = transformPoints(
+              [shape.center],
+              window.innerWidth,
+              window.innerHeight
+            )[0];
             return (
               <Ellipse
                 key={index}
-                x={shape.center?.x ?? 0}
-                y={shape.center?.y ?? 0}
+                x={center.x ?? 0}
+                y={center.y ?? 0}
                 radiusX={shape.radiusX ?? 0}
                 radiusY={shape.radiusY ?? 0}
                 fill={shape.fillColor}
