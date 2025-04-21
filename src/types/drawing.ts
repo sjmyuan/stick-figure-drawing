@@ -32,8 +32,8 @@ export interface Wedge {
   type: "WEDGE";
   center: Point;
   radius: number;
-  angle: number;
-  rotation: number;
+  startAngle: number;
+  endAngle: number;
   fillColor: string;
   strokeColor: string;
   strokeWidth: number;
@@ -58,7 +58,8 @@ export interface Arc {
   center: Point;
   innerRadius: number;
   outerRadius: number;
-  angle: number;
+  startAngle: number;
+  endAngle: number;
   fillColor: string;
   strokeColor: string;
   strokeWidth: number;
